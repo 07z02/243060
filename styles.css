@@ -1,17 +1,47 @@
+/* Reset a základní nastavení */
 * {
-  margin:0px;
-  padding:0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #2a9d8f;
+  --secondary-color: #264653;
+  --font-family: system-ui, sans-serif;
+}
+
+/* Stránka */
+body {
+  font-family: var(--font-family);
+  background-color: #f1faee;
+  color: #333;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* Obrázek Octocat */
 #octocat {
   display: block;
-  width:384px;
-  margin: 50px auto;
+  max-width: 100%;
+  width: 384px;
+  margin: 2rem auto;
 }
 
+/* Odstavce */
 p {
-  display: block;
-  width: 400px;
-  margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  max-width: 600px;
+  margin: 2rem auto;
+  font-size: 1.25rem;
+  font-family: monospace;
+  text-align: center;
+}
+
+/* Responzivní úpravy */
+@media (max-width: 600px) {
+  p {
+    font-size: 1rem;
+    width: auto;
+    padding: 0 1rem;
+  }
 }
