@@ -1,12 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Web4 Playground</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web4 Playground — Spoon-Knife</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #0e0e0e, #121212);
+      color: #fff;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+      background: #0a0a0a;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      color: #00c896;
+    }
+    header p {
+      font-size: 1.25rem;
+      color: #aaa;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+      background: #1a1a1a;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+    section h2 {
+      color: #00c896;
+      margin-bottom: 1rem;
+    }
+    button {
+      padding: 12px 24px;
+      background: #00c896;
+      border: none;
+      border-radius: 8px;
+      font-weight: 700;
+      cursor: pointer;
+      color: #000;
+      transition: 0.3s all;
+    }
+    button:hover {
+      background: #00ffae;
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #777;
+      border-top: 1px solid #333;
+    }
+    a {
+      color: #00c896;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to the Web4Application Training Playground</h1>
-  <p>Edit this page, commit it, and open a PR!</p>
-  <button onclick="alert('Nice! You edited the repo!')">Click Me</button>
+
+  <header>
+    <h1>Web4 Playground</h1>
+    <p>Interactive training repo for Git, API, and Web4 demos.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>🚀 Getting Started</h2>
+      <p>Fork this repo, edit files, push changes, and open a Pull Request. Perfect for testing GitHub workflows, APIs, and onboarding new developers.</p>
+      <button onclick="alert('Welcome to Web4 Playground!')">Click Me</button>
+    </section>
+
+    <section>
+      <h2>📂 Project Structure</h2>
+      <ul>
+        <li><strong>index.html</strong> — Landing page</li>
+        <li><strong>style.css</strong> — Styles</li>
+        <li><strong>api/</strong> — Python API demo</li>
+        <li><strong>scripts/</strong> — Git practice scripts</li>
+        <li><strong>.github/</strong> — CI/CD + PR templates</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>💡 Tips & Practice</h2>
+      <ol>
+        <li>Edit this page and commit your changes.</li>
+        <li>Create a new branch and open a PR.</li>
+        <li>Experiment with API routes in <code>api/app.py</code>.</li>
+        <li>Test CI workflow by pushing commits.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>🔗 Resources</h2>
+      <p>
+        - <a href="https://docs.github.com/en">GitHub Docs</a><br>
+        - <a href="https://fastapi.tiangolo.com/">FastAPI Docs</a><br>
+        - <a href="https://web4application.github.io/">Web4Application Main</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Web4Application | Built with ❤️ by Seriki Yakub</p>
+  </footer>
+
 </body>
 </html>
